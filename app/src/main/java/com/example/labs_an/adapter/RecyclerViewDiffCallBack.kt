@@ -5,10 +5,10 @@ import com.example.labs_an.ProductData
 
 class RecyclerViewDiffCallBack : DiffUtil.ItemCallback<ProductData>() {
     override fun areItemsTheSame(oldItem: ProductData, newItem: ProductData): Boolean {
-        return oldItem == newItem
+        return true
     }
 
     override fun areContentsTheSame(oldItem: ProductData, newItem: ProductData): Boolean {
-        return oldItem == newItem
+        return true
     }
 }

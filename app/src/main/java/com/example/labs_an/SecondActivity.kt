@@ -20,7 +20,6 @@ class SecondActivity : AppCompatActivity() {
     }
 
     private fun parseArgs() {
-        binding.tvPrinter.text = intent.getStringExtra("printer")
-        binding.tvCost.text = (intent.getIntExtra("cost", 0)).toString()
+        binding.image.setImageResource(intent.getIntExtra("test", 0))
     }
 }
