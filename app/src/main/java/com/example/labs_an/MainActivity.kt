@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
         binding.addNewTvButton.setOnClickListener {
+            EntityArg.getInstance(null)
             val myIntent = Intent(this, AddEditApplicationActivity::class.java)
             this@MainActivity.startActivity(myIntent)
         }
