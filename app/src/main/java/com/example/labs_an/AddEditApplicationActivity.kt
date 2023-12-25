@@ -47,7 +47,7 @@ class AddEditApplicationActivity : Activity() {
                 scope.launch {
                     database?.televisionDao()?.delete(editedEntity)
                 }
-                Toast.makeText(this, "Телевізор видалено з бази данних", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Application видалено", Toast.LENGTH_SHORT).show()
                 this.onBackPressed()
             }
         }
@@ -77,9 +77,9 @@ class AddEditApplicationActivity : Activity() {
                 }
             }
             if (editedEntity == null) {
-                Toast.makeText(this, "Телевізор додано до бази данних", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Application додано", Toast.LENGTH_SHORT).show()
             } else {
-                Toast.makeText(this, "Телевізор змінено", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Application змінено", Toast.LENGTH_SHORT).show()
             }
             this.onBackPressed()
         }
